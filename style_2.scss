@@ -286,16 +286,6 @@ header.masthead .bg-circle-4 {
   box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
 }
 
-.btn-secondary {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
-}
-
-.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #cc5500 !important;
-  border-color: #cc5500 !important;
-}
-
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
@@ -328,6 +318,13 @@ h1, .h1 {
    background-image: linear-gradient(45deg, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
  }
 
+ .pad-to-fit {
+   padding-bottom: 200px;
+ }
+.blue {
+  color: white;
+  background-color: #1d4a9a;
+}
 
 .right-on-desktop {
   padding-right: 30px;
