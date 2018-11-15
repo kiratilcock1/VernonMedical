@@ -366,6 +366,17 @@ h1, .h1 {
 .m-t-50 {
   margin-top: 50px;
 }
+.pad-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.background-color {
+  background-image: url({{ site.baseurl }}/assets/images/img_1.jpg);
+  border-radius: 2px;
+  padding: 4em 2em;
+  color: white !important;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
