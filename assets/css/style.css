@@ -94,7 +94,7 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
 }
   @media screen and (max-width: 420px) {
     .probootstrap-navbar-dark {
-      top: 57px;
+      top: 57px !important;
   }
 }
 
