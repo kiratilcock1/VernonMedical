@@ -543,14 +543,14 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
     font-size: 16px; }
 
 .prbootstrap-team {
-  background: #32609e;
+  background: ##203D65;
   -webkit-transition: .2s all ease;
   -o-transition: .2s all ease;
   transition: .2s all ease;
   position: relative;
   top: 0; }
   .prbootstrap-team:hover {
-    background: #4fb5e6;
+    background: #8EAFDB;
     -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
     position: relative;
