@@ -71,7 +71,7 @@ h5, .h5 {
   color: #32609e !important; }
 
 .text-secondary {
-  color: #4fb5e6 !important;
+  color: #B1BBC9 !important;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -294,7 +294,7 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
         color: rgba(255, 255, 255, 0.6); }
   .probootstrap-features-1 .probootstrap-opening {
     padding: 2em 1em;
-    background: #1d4a9a; }
+    background: #203D65; }
     .probootstrap-features-1 .probootstrap-opening h2 {
       font-size: 20px;
       text-transform: uppercase;
