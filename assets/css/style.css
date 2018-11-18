@@ -543,7 +543,7 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
     font-size: 16px; }
 
 .prbootstrap-team {
-  background: ##203D65;
+  background: #203D65;
   -webkit-transition: .2s all ease;
   -o-transition: .2s all ease;
   transition: .2s all ease;
