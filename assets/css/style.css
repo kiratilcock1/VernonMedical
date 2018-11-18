@@ -80,7 +80,7 @@ h5, .h5 {
   letter-spacing: .1em; }
 
 .probootstrap-navbar-dark {
-  background: #e8e8e8 !important;
+  background: #fff !important;
   position: fixed;
   left: 0;
   right: 0;
@@ -174,7 +174,7 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
     .probootstrap-navbar-dark .probootstrap-search-form .form-group .form-control {
       color: #fff !important;
       border: none;
-      background: #386cb1 !important;
+      background: #203D65 !important;
       border-radius: 0;
       padding-left: 20px;
       padding-right: 55px;
@@ -183,7 +183,7 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
       -o-transition: .3s all ease;
       transition: .3s all ease; }
       .probootstrap-navbar-dark .probootstrap-search-form .form-group .form-control:focus, .probootstrap-navbar-dark .probootstrap-search-form .form-group .form-control:active {
-        background: #3b70b9 !important; }
+        background: #203D65 !important; }
       .probootstrap-navbar-dark .probootstrap-search-form .form-group .form-control::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.7);
         font-size: 16px; }
