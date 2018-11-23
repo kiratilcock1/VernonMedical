@@ -5,7 +5,7 @@
 // IMPORTS
 //
 
-@import "reset";
+
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
@@ -136,14 +136,6 @@ img {
 .clearfix:after {
     clear: both;
 }
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
 
 body {
   font-family: 'Lato';
@@ -366,6 +358,10 @@ h1, .h1 {
 .m-t-50 {
   margin-top: 50px;
 }
+
+.m-t-100 {
+  margin-top: 100px;
+}
 .pad-15 {
   padding-right: 15px;
   padding-left: 15px;
@@ -380,10 +376,11 @@ h1, .h1 {
 
 .square {
   height: 300px;
-  width: 300px;
+  max-width: 300px;
   display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+  overflow: hidden;
 
 	-ms-flex-align: center;
 	-webkit-align-items: center;

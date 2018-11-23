@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/animate.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
 
   <body>
@@ -38,7 +39,7 @@
     <nav class="nav-one">
       <div class="container">
           <ul class="flex no-bullet" style="margin-bottom: 0;">
-            <li class="right-on-desktop"><a href="#" class="white">+1 250-222-XXXX</a></li>
+            <li class="right-on-desktop"><a href="tel:+1.250.545.2288" class="white">+1 (250) - 545 - 2288</a></li>
             <li><a href="https://goo.gl/maps/oPcC7hVGQXD2" class="white">3207 30th Ave, Vernon, BC</a></li>
           </ul>
       </div>
@@ -85,21 +86,21 @@
             <p>3207 30th Ave, Vernon, BC V1T 2C6, Canada</p>
             <h3 class="heading text-white">Hours</h3>
             <p>
-              Mon-Fri 7:30-18:00 <br>
+              Mon-Fri 8:30-5:00 <br>
               Sat-Sun Closed
             </p>
             <h3 class="heading text-white">Contact</h3>
             <p>
-              250-222-xxxx<br>
+              <a href='tel:+1.250.545.2288' onMouseOver="this.style.color='#FFFF'" onMouseOut="this.style.color='#7D8EA5'">+1 (250) - 545 - 2288</a><br>
             </p>
           </div>
           <div class="col-md-3" class="offset-md-6">
             <h3 class="heading">Quick Links</h3>
             <ul class="list-unstyled probootstrap-footer-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Patient Information</a></li>
-              <li><a href="#">After-hours care</a></li>
-              <li><a href="#">Location and Hours</a></li>
+              <li><a href="{{ site.baseurl }}/patient_information">Patient Information</a></li>
+              <li><a href="{{ site.baseurl }}/after_hours_care">After-hours care</a></li>
+              <li><a href="{{ site.baseurl }}/location_hours">Location and Hours</a></li>
             </ul>
           </div>
         </div>
