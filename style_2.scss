@@ -192,7 +192,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, #203D65 0%, #ee0979 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -307,7 +307,8 @@ h1, .h1 {
    position: relative;
    max-height: 650px;
    height: 100%;
-   background-image: linear-gradient(45deg, #174E62 0%, #174E62 1%, #274E62 100%);
+   // background-image: linear-gradient(45deg, #174E62 0%, #274E62 100%);
+   background-image: linear-gradient(45deg, #203D65 0%, rgba(#2f5995, 1) 100%);
  }
 
  .pad-to-fit {
@@ -362,6 +363,10 @@ h1, .h1 {
 .m-t-100 {
   margin-top: 100px;
 }
+
+.m-b-50 {
+  margin-bottom: 50px;
+}
 .pad-15 {
   padding-right: 15px;
   padding-left: 15px;
@@ -387,6 +392,31 @@ h1, .h1 {
 	-webkit-box-align: center;
 
 	align-items: center;
+}
+
+.svg-icon path {
+  fill: #203D65;
+}
+
+.flex-center {
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+  align-items: center;
+}
+
+.m-tb-15{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.invis {
+  color: current-color !important;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
