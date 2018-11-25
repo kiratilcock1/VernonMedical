@@ -372,6 +372,11 @@ h1, .h1 {
   padding-left: 15px;
 }
 
+.pad-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .background-color {
   background-image: url({{ site.baseurl }}/assets/images/img_1.jpg);
   border-radius: 2px;
