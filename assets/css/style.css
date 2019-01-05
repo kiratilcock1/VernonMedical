@@ -7,7 +7,8 @@ body {
   line-height: 1.8;
   font-size: 16px;
   background: #fff;
-  color: #859196; }
+/* color: #859196; */
+ }
 
 .fixed-2 {
   position:fixed;
