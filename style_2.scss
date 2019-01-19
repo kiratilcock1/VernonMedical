@@ -444,6 +444,50 @@ h1, .h1 {
     padding-bottom: 15px;
   }
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  background-color: #fff;
+  color: #444;
+
+  @media (max-width: 800px){
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 400px){
+    grid-template-columns: 1fr;
+  }
+}
+
+.box {
+  background-color: #203d65;
+  color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+}
+.box:hover {
+  box-shadow: 0 0 10px 0 gray;
+  background-color: #0e5096;
+  transform: translate(0, -15px);
+  transition: 0.2s;
+}
+
+.team {
+  font-size: 18px;
+  color: #fff !important;
+  line-height: 1.2;
+}
+.title {
+  display: block;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  letter-spacing: .1em;
+
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
