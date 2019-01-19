@@ -447,6 +447,7 @@ h1, .h1 {
 
 .wrapper {
   display: grid;
+  max-width: 1000px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
   background-color: #fff;
@@ -466,12 +467,13 @@ h1, .h1 {
   color: #fff;
   border-radius: 2px;
   padding: 20px;
+  height: 130px;
+  transition: 0.2s;
 }
 .box:hover {
   box-shadow: 0 0 10px 0 gray;
   background-color: #0e5096;
   transform: translate(0, -15px);
-  transition: 0.2s;
 }
 
 .team {
