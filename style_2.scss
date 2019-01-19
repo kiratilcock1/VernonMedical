@@ -469,11 +469,12 @@ h1, .h1 {
   padding: 20px;
   height: 130px;
   transition: 0.2s;
+  font-size: 110%;
 }
 .box:hover {
   box-shadow: 0 0 10px 0 gray;
   background-color: #0e5096;
-  transform: translate(0, -15px);
+  transform: translate(0, -10px);
 }
 
 .team {
