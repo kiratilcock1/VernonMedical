@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/favicon/stethoscope-32.png"/>
@@ -35,41 +35,39 @@
 
     <!-- Navigation -->
 
-    <nav class="nav-one">
+    <nav class="navbar navbar-expand-lg probootstrap-navbar-dark center">
       <div class="container">
-          <div class="flex no-bullet" style="margin-bottom: 0px; padding-top: 2.5px; padding-bottom: 2.5px; font-size: 14px;">
-            <li class="right-on-desktop"><a href="tel:+1.250.545.2288" class="white">+1 (250) - 545 - 2288</a></li>
-            <li><a href="https://goo.gl/maps/oPcC7hVGQXD2" class="white">3207 30th Ave, Vernon, B.C.</a></li>
-          </div>
-      </div>
-    </nav>
-
-    <nav class="navbar fixed-2 navbar-expand-lg probootstrap-navbar-dark">
-      <div class="container">
-        <!-- <a class="navbar-brand" href="index.html">Health</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-nav" aria-controls="probootstrap-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
+
+
         <div class="collapse navbar-collapse" id="probootstrap-nav">
-          <ul class="navbar-nav mr-auto bold">
-            <li class="nav-item active"><a href="{{ site.baseurl }}/" class="nav-link pl-0">Home</a></li>
-            <li class="nav-item"><a href="{{ site.baseurl }}/patient_information" class="nav-link">Patient Information</a></li>
+          <ul class="navbar-nav center bold">
+            <li class="nav-item active"><a href="{{ site.baseurl }}/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{ site.baseurl }}/location_hours" class="nav-link">Location & Hours</a></li>
             <li class="nav-item"><a href="{{ site.baseurl }}/after_hours_care" class="nav-link">After Hours Care</a></li>
-          </ul>
-          <!-- <div class="ml-auto">
-            <form action="#" method="get" class="probootstrap-search-form mb-sm-0 mb-3">
-              <div class="form-group">
-                <button class="icon submit"><span class="icon-magnifying-glass"></span></button>
-                <input type="text" class="form-control" placeholder="Search">
+
+            <li class="nav-item dropdown">
+              <a href="{{ site.baseurl }}/patient_information" class="nav-link">
+                <div class="dropdown-toggle hover-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Patient Information
+                </div>
+              </a>
+              <div style="margin-top: -5px " class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#websites">Recommended Websites</a>
+                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#healthinfo">General Health Information</a>
+                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#smoking">Smoking Cessation</a>
               </div>
-            </form>
-          </div> Remove search for now -->
+            </li>
+
+          </ul>
+
         </div>
       </div>
     </nav>
-    <!-- END nav -->
+       <!--END nav -->
 
     </div>
 

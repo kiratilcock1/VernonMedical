@@ -45,12 +45,13 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #27497a;
+  color: #32609e;
 
  }
   a:hover {
     text-decoration: none;
-    color: #8EAFDB; }
+    color: #0e5096;
+    transform: translate(0, -2px); }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -61,6 +62,9 @@ h1, h2, h3, h4, h5,
   color: #32609e !important; }
 
 .text-secondary {
+  font-family: 'Merriweather', serif;
+}
+.serrif {
   font-family: 'Merriweather', serif;
 }
 
@@ -83,13 +87,12 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
 }
   @media screen and (max-width: 420px) {
     .probootstrap-navbar-dark {
-      top: 55px !important;
+      top: 0 !important;
   }
 }
-
   @media screen and (max-width: 991px) {
     .probootstrap-navbar-dark {
-      top: 28.5px;
+      top: 0px;
       position: fixed; } }
   .probootstrap-navbar-dark .navbar-nav > .nav-item > .nav-link {
     font-size: 13px;
