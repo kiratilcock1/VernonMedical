@@ -9,8 +9,6 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style_2.css"/>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
@@ -21,13 +19,12 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/open-iconic-bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/owl.theme.default.min.css">
-
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/icomoon.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/flaticon.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/animate.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style_2.css"/>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
 
@@ -41,11 +38,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
-
         <div class="collapse navbar-collapse" id="probootstrap-nav">
           <ul class="navbar-nav center bold">
-            <li class="nav-item active"><a href="{{ site.baseurl }}/" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="{{ site.baseurl }}/" class="nav-link"><img src="{{ site.baseurl }}/assets/favicon/stethoscope-32.png" style="height: 18px; width:19px; margin-right:5px;" />Home</a></li>
             <li class="nav-item"><a href="{{ site.baseurl }}/location_hours" class="nav-link">Location & Hours</a></li>
             <li class="nav-item"><a href="{{ site.baseurl }}/after_hours_care" class="nav-link">After Hours Care</a></li>
 
@@ -67,20 +62,17 @@
         </div>
       </div>
     </nav>
-       <!--END nav -->
-
-    </div>
+    <!--END nav -->
 
     {{ content }}
-
 
     <footer class="probootstrap-footer">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-3">
             <h3 class="heading">Location</h3>
-            <p>3207 30th Ave, Vernon, BC V1T 2C6, Canada</p>
-            <h3 class="heading text-white">Hours</h3>
+            <a target="_blank" onMouseOver="this.style.color='#FFFF'" onMouseOut="this.style.color='#7D8EA5'" href="https://goo.gl/maps/empgXuAoHDF2">3207 30th Ave, Vernon, BC V1T 2C6, Canada</a><br />
+            <h3 style="margin-top: 10px" class="heading text-white">Hours</h3>
             <p>
               Mon-Fri 8:30-5:00 <br>
               Sat-Sun Closed
@@ -106,20 +98,13 @@
     </footer>
 
     <!-- loader -->
-      <div id="probootstrap-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#32609e"/></svg></div>
-
+    <div id="probootstrap-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#32609e"/></svg></div>
 
     {% include analytics.html %}
 
     <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/owl.carousel.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/jquery.waypoints.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/jquery.animateNumber.min.js"></script>
-
     <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
   </body>
-
-
 </html>
