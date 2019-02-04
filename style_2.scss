@@ -28,8 +28,15 @@ em, i {
   font-style: italic;
 }
 
-strong, b {
+strong, b, .bold {
   font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+}
+.light {
+  color: pink;
 }
 
 img {

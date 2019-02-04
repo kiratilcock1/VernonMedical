@@ -46,7 +46,6 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   color: #32609e;
-
  }
   a:hover {
     text-decoration: none;

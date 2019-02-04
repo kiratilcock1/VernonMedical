@@ -39,12 +39,29 @@
         </button>
 
         <div class="collapse navbar-collapse" id="probootstrap-nav">
-          <ul class="navbar-nav center bold">
-            <li class="nav-item active"><a href="{{ site.baseurl }}/" class="nav-link"><img src="{{ site.baseurl }}/assets/favicon/stethoscope-32.png" style="height: 18px; width:19px; margin-right:5px;" />Home</a></li>
+          <ul class="navbar-nav center bold light">
+
+            {% if page.active == "home" %}
+            <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link"><img src="{{ site.baseurl }}/assets/favicon/stethoscope-32.png" style="height: 18px; width:19px; margin-right:5px;" />Home</a></li>
+            {% else %}
+            <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link" style="color: gray;"><img src="{{ site.baseurl }}/assets/favicon/stethoscope-32.png" style="height: 18px; width:19px; margin-right:5px;" />Home</a></li>
+            {% endif %}
+
+            {% if page.active == "location_hours" %}
             <li class="nav-item"><a href="{{ site.baseurl }}/location_hours" class="nav-link">Location & Hours</a></li>
+            {% else %}
+            <li class="nav-item"><a href="{{ site.baseurl }}/location_hours" class="nav-link" style="color: gray;">Location & Hours</a></li>
+            {% endif %}
+
+            {% if page.active == "after_hours_care" %}
             <li class="nav-item"><a href="{{ site.baseurl }}/after_hours_care" class="nav-link">After Hours Care</a></li>
+            {% else %}
+            <li class="nav-item"><a href="{{ site.baseurl }}/after_hours_care" class="nav-link" style="color: gray;">After Hours Care</a></li>
+            {% endif %}
 
             <li class="nav-item dropdown">
+
+              {% if page.active == "patient_information" %}
               <a href="{{ site.baseurl }}/patient_information" class="nav-link">
                 <div class="dropdown-toggle hover-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Patient Information
@@ -55,6 +72,21 @@
                 <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#healthinfo">General Health Information</a>
                 <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#smoking">Smoking Cessation</a>
               </div>
+              {% else %}
+
+              <a href="{{ site.baseurl }}/patient_information" class="nav-link" style="color: gray;">
+                <div class="dropdown-toggle hover-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Patient Information
+                </div>
+              </a>
+              <div style="margin-top: -5px " class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#websites" style="color: gray;">Recommended Websites</a>
+                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#healthinfo" style="color: gray;">General Health Information</a>
+                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#smoking" style="color: gray;">Smoking Cessation</a>
+              </div>
+
+            {% endif %}
+
             </li>
 
           </ul>
