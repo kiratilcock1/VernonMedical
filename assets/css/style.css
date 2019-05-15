@@ -261,7 +261,6 @@ background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
       .probootstrap-features-1 .probootstrap-feature-item {
         height: 200px; } }
     .probootstrap-features-1 .probootstrap-feature-item:before {
-      background: rgba(0, 0, 0, 0.2);
       content: "";
       position: absolute;
       top: 0;
