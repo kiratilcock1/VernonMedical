@@ -433,6 +433,18 @@ h1, .h1 {
   }
 }
 
+.wrapper-2 {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  color: #444;
+
+  @media (max-width: 400px){
+    grid-template-columns: 1fr;
+  }
+}
+
 .box {
   background-color: #203d65;
   color: #fff;
