@@ -894,3 +894,60 @@ textarea {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+ul.nav {
+	list-style: none;
+	padding-left: 0;
+}
+
+li.nav {
+	color: #fff;
+	display: block;
+	float: left;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li.nav:hover,
+li.nav:focus-within {
+	cursor: pointer;
+}
+
+li.nav:focus-within a {
+  outline: none;
+}
+
+ul.nav li ul {
+	visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+	position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+	left: 0;
+  display: none;
+}
+
+ul.nav li:hover > ul,
+ul.nav li:focus-within > ul,
+ul.nav li ul:hover,
+ul.nav li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block
+}
+
+ul.nav li ul li {
+	clear: both;
+  width: 100%;
+}
+ul.nav {
+  list-style: none;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+}

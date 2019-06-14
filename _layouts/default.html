@@ -34,7 +34,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="probootstrap-nav">
-          <ul class="navbar-nav center bold light">
+          <ul class="navbar-nav center bold light nav">
 
             {% if page.active == "home" %}
             <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link"><img src="{{ site.baseurl }}/assets/favicon/stethoscope-32.png" style="height: 18px; width:19px; margin-right:5px;" />Home</a></li>
@@ -54,35 +54,28 @@
             <li class="nav-item"><a href="{{ site.baseurl }}/after_hours_care" class="nav-link" style="color: gray;">After Hours Care</a></li>
             {% endif %}
 
-            <li class="nav-item dropdown">
 
-              {% if page.active == "patient_information" %}
-              <a href="{{ site.baseurl }}/patient_information" class="nav-link">
-                <div class="dropdown-toggle hover-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Patient Information
-                </div>
-              </a>
-              <div style="margin-top: -5px " class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#websites">Recommended Websites</a>
-                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#healthinfo">General Health Information</a>
-                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#smoking">Smoking Cessation</a>
-              </div>
-              {% else %}
 
-              <a href="{{ site.baseurl }}/patient_information" class="nav-link" style="color: gray;">
-                <div class="dropdown-toggle hover-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Patient Information
-                </div>
-              </a>
-              <div style="margin-top: -5px " class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#websites" style="color: gray;">Recommended Websites</a>
-                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#healthinfo" style="color: gray;">General Health Information</a>
-                <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#smoking" style="color: gray;">Smoking Cessation</a>
-              </div>
-
+            <li class="nav nav-item">
+            {% if page.active == "patient_information" %}
+            <a href="{{ site.baseurl }}/patient_information" class="nav-link">Patient Information</a>
+            {% else %}
+            <a href="{{ site.baseurl }}/patient_information" class="nav-link" style="color: gray;">Patient Information</a>
             {% endif %}
 
-            </li>
+             <ul class="dropdown nav" style="margin-top: -5px;   radius: 3px;
+               box-shadow: 0 0 5px 1px lightgray;" >
+               <li>
+                 <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#websites" {% if page.active != "patient_information" %} style="color: gray" {% endif %}>Recommended Websites</a>
+               </li>
+               <li>
+                 <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#healthinfo"  {% if page.active != "patient_information" %} style="color: gray" {% endif %}>General Health Information</a>
+               </li>
+               <li>
+                 <a class="dropdown-nav" href="{{ site.baseurl }}/patient_information#smoking"  {% if page.active != "patient_information" %} style="color: gray" {% endif %}>Smoking Cessation</a>
+               </li>
+             </ul>
+           </li>
 
           </ul>
 
